@@ -14,11 +14,12 @@ import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.distinctUntilChangedBy
 import kotlinx.coroutines.flow.filter
 import javax.inject.Inject
+import com.cihadseker.main.BR
 
 @AndroidEntryPoint
 class FRHome : BaseFragment<FragmentHomeBinding>() {
 
-    private val viewModel: FRHomeVM by injectVM(brId = com.cihadseker.main.BR.viewModel)
+    private val viewModel: FRHomeVM by injectVM(brId = BR.viewModel)
 
     @Inject
     lateinit var adapterPeople: AdapterPeople
